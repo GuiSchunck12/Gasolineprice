@@ -25,6 +25,19 @@ Each record includes details such as fuel type, region, state, municipality, and
 
 ---
 
+## ⚙️ Data Modeling Approach
+Due to Excel’s row limit (1,048,576 rows), it was not possible to load the entire dataset directly into worksheets.  
+To handle large volumes of data efficiently:
+- The data was **loaded directly from Power Query into the Power Pivot data model**,  
+  without creating intermediate Excel tables.
+- All transformations and calculations were done within **Power Query** and **DAX**,  
+  ensuring optimized performance and a lightweight dashboard.
+- The **Power Pivot Data Model** acts as the single source of truth for all visualizations.
+
+This architecture allows Excel to manage millions of records efficiently while maintaining interactivity and performance.
+
+---
+
 ## 📊 Dashboard Overview
 The dashboard includes:
 
@@ -44,3 +57,22 @@ The dashboard includes:
 ---
 
 ## 🧩 Project Structure
+
+
+---
+
+## 🔗 View the Dashboard
+You can view or download the dashboard here:  
+👉 [View on OneDrive](https://onedrive.live.com/) *(replace this link with your actual URL)*  
+
+---
+
+## 👨‍💻 Author
+**Guilherme Cassimiro Schunck Cazac**  
+📍 São Paulo, Brazil  
+🔗 [LinkedIn](www.linkedin.com/in/guilherme-schunck1207199712)  
+
+---
+
+⭐ *If you found this project useful, feel free to star this repository!*
+
